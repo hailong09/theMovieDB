@@ -75,7 +75,7 @@ const handleSubmit = e => {
   <>
     <Nav>
       <div className="logo">
-      <Link to="/">
+      <Link to="/movie">
                     <BrandLogo src={Homelogo} alt="logo-brand"/>
                 </Link>
       </div>

@@ -73,13 +73,13 @@ const RightNav = ({ open }) => {
       {/* {!open && <>  */}
      
         <HomeMenu className='home-1'>
-        <Link to="/">Home</Link>
+        <Link to="/movie">Home</Link>
         </HomeMenu> 
         <div className='genre-1'> <Genre /></div>
      
       {/* </>} */}
       {/* {open && <>  */}
-        <div className='home-2'><Link to="/"><h4>HOME</h4></Link></div>
+        <div className='home-2'><Link to="/movie"><h4>HOME</h4></Link></div>
         <div className='genre-2' >
           <h4>MOVIE</h4>
           <div className='genre'>
