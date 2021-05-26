@@ -22,7 +22,7 @@ function App() {
           <Route  path="/:movieType/:id" component={Detail} />
           
           <Route  path="/movie" component={Home}/>
-          <Redirect from="/" to="/movie" exact />
+          <Redirect from="/theMovieDB" to="/movie" exact />
           </Switch>   
       </div>
  </Suspense>
