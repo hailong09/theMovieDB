@@ -1,6 +1,6 @@
 import React, {Suspense} from 'react';
 import './App.css'
-import {Switch, Route} from 'react-router-dom'
+import {Switch, Route, Redirect} from 'react-router-dom'
 import LoadingIndicator from './LoadingIndicator';
 
 const Home = React.lazy(() => import('./components/Home'))
@@ -17,11 +17,12 @@ function App() {
       <div className="App">
           <Header/>
           <Switch>
-          <Route exact path="/search" component={SearchMovies}/>
-          <Route exact path="/discover/:genreName/:page" component={GenreMovies}/>
-          <Route exact path="/:movieType/:id" component={Detail} />
+          <Route  path="/movie/search" component={SearchMovies}/>
+          <Route  path="/movie/discover/:genreName/:page" component={GenreMovies}/>
+          <Route  path="/movie/:movieType/:id" component={Detail} />
           
-          <Route exact path="/" component={Home}/>    
+          <Route  path="/movie" component={Home}/>
+          <Redirect from="/" to="/movie" exact />
           </Switch>   
       </div>
  </Suspense>

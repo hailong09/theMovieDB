@@ -25,13 +25,13 @@
     "slick-carousel": "^1.8.1",
     "styled-components": "^5.3.0"
   },
-  "homepage": "http://hailong09.github.io/theMovieDB",
+  "homepage": "https://hailong09.github.io/theMovieDB",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "gh-pages-clean",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
