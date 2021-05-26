@@ -84,7 +84,7 @@ const RightNav = ({ open }) => {
           <h4>MOVIE</h4>
           <div className='genre'>
             {genreMap.map(g => (
-                <a href={`/discover/${g.name}/1`} key={g.id}>{g.name}</a>
+                <a href={`/theMovieDB#/discover/${g.name}/1`} key={g.id}>{g.name}</a>
             ))}
           </div>
          
