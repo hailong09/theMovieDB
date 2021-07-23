@@ -25,9 +25,7 @@ const ContentType = ({trend, movieType}) => {
                     <img src={m["poster_path"]} alt=""/>
                     <Moreinfo>
                     
-                            <div onClick={handleClick.bind(this, m.id)} >Detail</div>
-
-                    
+                        <div onClick={handleClick.bind(this, m.id)} >Detail</div>
                         <p>{m.title ? m.title : m.name}</p>
                     </Moreinfo>
                 </Wrap>

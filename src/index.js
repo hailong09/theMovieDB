@@ -10,9 +10,9 @@ import {BrowserRouter as Router ,HashRouter} from 'react-router-dom'
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <HashRouter>
+      <Router>
         <App />
-      </HashRouter>
+      </Router>
     </Provider>
   </React.StrictMode>,
   document.getElementById('root')

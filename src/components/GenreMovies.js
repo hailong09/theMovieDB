@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import { Content, TrendBar } from '../StyledComponents/Movies'
-import {Container} from '../StyledComponents/Home'
 import styled from 'styled-components'
 import { useHistory, useParams } from 'react-router'
 import { useDispatch, useSelector } from 'react-redux'

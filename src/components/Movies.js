@@ -23,8 +23,6 @@ const MoviesType = ({movieType, topRated, popular, upcoming, tvToprated, tvPopul
             <Content>
                 <ContentType 
                     trend = {recommendation}
-                    
-                   
                   
                     />
                 </Content>   

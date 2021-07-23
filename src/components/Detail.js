@@ -18,15 +18,10 @@ import playIconWhite from '../images/play-icon-white.png'
 
 
 const Detail = () => {
-   
     const {id , movieType} = useParams()
-    // console.log(movieType);
-   
     const dispatch = useDispatch();
-
     const recommend = useSelector(recommendSelector);
-    const {
-      
+    const { 
         popularity,
         overview,
         release_date,
@@ -43,17 +38,15 @@ const Detail = () => {
     useEffect(() => {
         
         dispatch(fetchDetail({id, movieType}))
-            
 
     },[dispatch, id ,movieType]) 
-    useDocumentTitle(title)
+    useDocumentTitle(title ? title : name)
 
     return (
         
         <Container url={backdrop_path}>
             
-           {isLoading ? <LoadingIndicator/>:
-           
+           {isLoading ? <LoadingIndicator/>:        
                 <>
                 
                 <BackGround>
